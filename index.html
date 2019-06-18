@@ -11,13 +11,14 @@
 </head>
 <body>
     <div class="container-fluid">
+        <div class="jumbotron">
         <div id="start">
             <h1>PIZZA FATTA A PEZZI</h1>
-            <p>Where we care about your hunger desires</p>
+            <p>Where we care about your stomach</p>
         </div>
         <div class="intro">
             <h2>GREAT OFFERS FROM US!!!</h2>
-            <p>For being our loyal customers, we at <strong>Pizza Fatta A Pezzi</strong> have officially made out pizzas available online</p><br>
+            <p>For being our loyal customers, we at <strong>Pizza Fatta A Pezzi</strong> have officially made our pizzas available online</p>
             <p>They still come with the same great taste.</p><br>
             <p>Try our online application now!!!!</p>
         </div>
@@ -68,8 +69,33 @@
                     <label for="steak">BBQ Steak</label>
                 </form>
             </div>
+            <div class="number-pizza card col-3">
+                <form>
+                    <label for="number">How many pizzas would you like?</label>
+                    <input type="number" id="number" min="1" max="5">
+                </form>
+            </div>
+          </div>
         </div>
-    </div>
+        <div id="delivery">
+            <div class="row">
+                <div class="delivery-q col-4 card">
+                    <form>
+                        <label for="delivery">Do you want your pizza delivered to you?</label>
+                        <br>
+                        <input id="yes" name="delivery" value="yes" type="radio">
+                        <label for="yes">Yes</label>
+                        <br>
+                        <input id="no" name="delivery" value="no" type="radio">
+                        <label for="no">No</label>
+                    </form>
+                </div>
+                <div class="delivery-c col-8 card">
+                    <p>It will cost you Ksh. 200 only to deliver your pizza to you!</p>
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>
