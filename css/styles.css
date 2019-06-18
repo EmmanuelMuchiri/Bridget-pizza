@@ -12,3 +12,17 @@
 #h1{
     font-size: 65%;
 }
+.intro{
+    background-image: url("/home/bridget/wk4/css/Red-pizza-background.png");
+    background-size: 100%;
+    backface-visibility: hidden;
+    height: 350px;
+    text-align: center;
+    color: white;
+}
+.card{
+    background-image: url("/home/bridget/wk4/css/images3.jpeg");
+    color: white;
+    
+    width: 25%;
+}
