@@ -4,11 +4,11 @@
 ## Description
 This application gives customers a platform to order pizzas online and they may choose whether or not to have it delivered to them. The customers start by choosing the size of pizza they want, the crust and the type of topping they would like; they also input the number of pizzas they would like to order that. The number should not be less than one or exceed 5. They are then given the subtotal of the pizzas. The Grand total is the cost of subtotal and the delivery cost.
 ## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+* 
+* 
+* 
+* 
+* 
 {Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
 ## Known Bugs
 {Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
