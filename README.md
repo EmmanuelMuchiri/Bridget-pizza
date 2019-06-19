@@ -1,5 +1,5 @@
-# PEPINO'S PIZZA
-#### This application is used to order pizzas online from the pizza restuarant, PEPINO'S PIZZA. 15/06/2019
+# PIZZA FATTA A PEZZI
+#### This application is used to order pizzas online from the pizza restuarant, PIZZA FATTA A PEZZI. 15/06/2019
 #### By Bridget Njoki Githinji
 ## Description
 This application gives customers a platform to order pizzas online and they may choose whether or not to have it delivered to them. The customers start by filing their contach details. They go on to choose the size of pizza they want, the crust and the type of topping they would like. If they want more than one pizza then they click on the button that gives them the option to order another pizza.
