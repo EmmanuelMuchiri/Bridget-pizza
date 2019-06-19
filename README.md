@@ -1,8 +1,8 @@
-# PIZZA FATTA A PEZZI
-#### This application is used to order pizzas online from the pizza restuarant, PIZZA FATTA A PEZZI. 15/06/2019
+# PEPINO'S PIZZA
+#### This application is used to order pizzas online from the pizza restuarant, PEPINO'S PIZZA. 15/06/2019
 #### By Bridget Njoki Githinji
 ## Description
-This application gives customers a platform to order pizzas online and they may choose whether or not to have it delivered to them. The customers start by choosing the size of pizza they want, the crust and the type of topping they would like; they also input the number of pizzas they would like to order that. The number should not be less than one or exceed 5. They are then given the subtotal of the pizzas. The Grand total is the cost of subtotal and the delivery cost.
+This application gives customers a platform to order pizzas online and they may choose whether or not to have it delivered to them. The customers start by filing their contach details. They go on to choose the size of pizza they want, the crust and the type of topping they would like. If they want more than one pizza then they click on the button that gives them the option to order another pizza.
 ## Setup/Installation Requirements
 * Create an account on Github
 * Fork the repository from Github
