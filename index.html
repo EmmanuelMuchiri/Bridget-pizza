@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
     <link href="images/pizza-icon.jpg" rel="shortcut icon">
     <title>Pizza</title>
 </head>
+
 <body>
     <div class="container-fluid">
-        
+
         <div id="start">
             <h1><strong>PIZZA FATTA A PEZZI</strong></h1>
             <p>Where we care about your stomach</p>
@@ -19,65 +21,69 @@
         <br>
         <div class="intro">
             <h2>GREAT OFFERS FROM US!!!</h2><br>
-            <p>For being our loyal customers, we at <strong>Pizza Fatta A Pezzi</strong> have officially made our pizzas available online</p>
+            <p>For being our loyal customers, we at <strong>Pizza Fatta A Pezzi</strong> have officially made our pizzas
+                available online</p>
             <p>They still come with the same great taste.</p><br>
             <p><em><strong>Try our online application now!!!!</strong></em></p>
         </div>
         <br>
         <div id="choices">
             <div class="row">
-            <div class="card size col-3">
-                <form>
-                    <h5><strong>Size</strong></h5>
-                    <input type="radio" id="small" name="size" value="small">
-                    <label for="small">Small</label>
-                    <br>
-                    <input type="radio" id="medium" name="size" value="medium">
-                    <label for="medium">Medium</label>
-                    <br>
-                    <input type="radio" id="large" name="size" value="large">
-                    <label for="large">Large</label>
-                </form>
+                <div class="card size col-3">
+                    <form>
+                        <h5><strong>Size</strong></h5>
+                        <input type="radio" id="small" name="size" value="small">
+                        <label for="small">Small</label>
+                        <br>
+                        <input type="radio" id="medium" name="size" value="medium">
+                        <label for="medium">Medium</label>
+                        <br>
+                        <input type="radio" id="large" name="size" value="large">
+                        <label for="large">Large</label>
+                    </form>
+                </div>
+                <div class="card crust col-3">
+                    <form>
+                        <h5><strong>Type of Crust</strong></h5>
+                        <input type="radio" id="thin" name="crust" value="original-thin">
+                        <label for="thin">Original Thin</label>
+                        <br>
+                        <input type="radio" id="pan" name="crust" value="new-york-pan">
+                        <label for="pan">New-York-Pan Crust</label>
+                        <br>
+                        <input type="radio" id="stuffed" name="crust" value="stuffed">
+                        <label for="stuffed">Stuffed Crust</label>
+                        <br>
+                        <input type="radio" id="italian" name="crust" value="italian">
+                        <label for="italian">Italian Crust</label>
+                    </form>
+                </div>
+                <div class="card toppings col-3">
+                    <form>
+                        <h5><strong>Toppings</strong></h5>
+                        <input type="radio" id="hawaiian" name="topping" value="hawaiian">
+                        <label for="hawaiian">Hawaiian topping</label>
+                        <br>
+                        <input type="radio" id="boer" name="topping" value="bore">
+                        <label for="boer">Boerewors Topping</label>
+                        <br>
+                        <input type="radio" id="chicken" name="topping" value="peri-peri-chicken">
+                        <label for="chicken">Peri-peri Chicken Topping</label>
+                        <br>
+                        <input type="radio" id="steak" name="topping" value="bbq-steak">
+                        <label for="steak">BBQ Steak</label>
+                    </form>
+                </div>
+                <div class="number-pizza card col-3">
+                    <form>
+                        <label for="number">How many pizzas would you like?</label>
+                        <input type="number" id="number" min="1" max="5">
+                    </form>
+                </div>
             </div>
-            <div class="card crust col-3">
-                <form>
-                    <h5><strong>Type of Crust</strong></h5>
-                    <input type="radio" id="thin" name="crust" value="original-thin">
-                    <label for="thin">Original Thin</label>
-                    <br>
-                    <input type="radio" id="pan" name="crust" value="new-york-pan">
-                    <label for="pan">New-York-Pan Crust</label>
-                    <br>
-                    <input type="radio" id="stuffed" name="crust" value="stuffed">
-                    <label for="stuffed">Stuffed Crust</label>
-                    <br>
-                    <input type="radio" id="italian" name="crust" value="italian">
-                    <label for="italian">Italian Crust</label>
-                </form>
-            </div>
-            <div class="card toppings col-3">
-                <form>
-                    <h5><strong>Toppings</strong></h5>
-                    <input type="radio" id="hawaiian" name="topping" value="hawaiian">
-                    <label for="hawaiian">Hawaiian topping</label>
-                    <br>
-                    <input type="radio" id="boer" name="topping" value="bore">
-                    <label for="boer">Boerewors Topping</label>
-                    <br>
-                    <input type="radio" id="chicken" name="topping" value="peri-peri-chicken">
-                    <label for="chicken">Peri-peri Chicken Topping</label>
-                    <br>
-                    <input type="radio" id="steak" name="topping" value="bbq-steak">
-                    <label for="steak">BBQ Steak</label>
-                </form>
-            </div>
-            <div class="number-pizza card col-3">
-                <form>
-                    <label for="number">How many pizzas would you like?</label>
-                    <input type="number" id="number" min="1" max="5">
-                </form>
-            </div>
-          </div>
+        </div>
+        <div id="sub-total">
+            <p>The total cost for yor pizza/s is</p>
         </div>
         <div id="delivery">
             <div class="row">
@@ -103,7 +109,8 @@
             </div>
         </div>
         <div id="grand-total"></div>
-      
+
     </div>
 </body>
+
 </html>
