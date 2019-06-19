@@ -3,8 +3,7 @@ function Pizza(pizzaSize, cheese) {
     this.cheese = cheese;
     this.meatToppings = [];
     this.vegToppings = [];
-
-    
+    this.cost (created in the refreshCost method);
   }
   Pizza.prototype.addMeat = function(meat) {
     this.meatToppings.push(meat);
@@ -34,8 +33,7 @@ function Pizza(pizzaSize, cheese) {
     }
     this.cost = cost;
   }
-  
-
+  Order Constructor, represents a customer order containing multiple pizzas
   function Order(customerName, customerAddress, customerPhone, customerCashCredit) {
     this.customerName = customerName;
     this.customerAddress = customerAddress;
@@ -57,8 +55,8 @@ function Pizza(pizzaSize, cheese) {
     });
     this.totalCost = totalCost;
   }
-
-
+  
+  
   var nextDiv = function(toHide, toShow) {
     $(toHide).hide();
     $(toShow).show();
@@ -123,17 +121,17 @@ function Pizza(pizzaSize, cheese) {
   }
   $(document).ready(function() {
     var customerOrder = new Order();
-    // event handler for begin ordering button
+    event handler for begin ordering button
     $('.launch-order button').click(function() {
       nextDiv('.launch-order', '.order-information-input');
     });
-    // event handler for customer information submit
+    event handler for customer information submit
     $('.order-information-input form').submit(function(event) {
       event.preventDefault();
       customerOrder = createCustomerOrder();
       nextDiv('.order-information-input', '.order-pizza-input');
     });
-    // event handler for add pizza
+    event handler for add pizza
     $('.order-pizza-input form').submit(function(event) {
       event.preventDefault();
       var thisPizza = createPizza();
@@ -142,21 +140,21 @@ function Pizza(pizzaSize, cheese) {
       $("#pizza-list-total-cost").text('$ '+ populateTotalPrice(customerOrder).toFixed(2));
       nextDiv('.order-pizza-input', '.order-summary');
     });
-    // event handler for add another pizza
+    
     $('#add-another-pizza').click(function() {
       nextDiv('.order-summary', '.order-pizza-input');
     });
-    // event handler for checkout order
+    
     $('#checkout-order').click(function() {
       nextDiv('.order-summary', '.checked-out');
     });
-    // event handler for new order/reset site
+    
     $('#new-order').click(function() {
       customerOrder = new Order();
       $('.pizza-list').empty();
       nextDiv('.checked-out', '.launch-order');
     });
-    // event handler for log object to console
+    
     $('#console-log').click(function() {
       console.log(customerOrder);
     })

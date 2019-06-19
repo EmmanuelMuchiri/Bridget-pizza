@@ -1,166 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="images/pizza-icon.jpg" rel="shortcut icon">
-    <title>Pizza</title>
-</head>
-
-<body>
-    <div class="container-fluid">
-
-        <div id="start">
-            <h1><strong>PIZZA FATTA A PEZZI</strong></h1>
-            <p>Where we care about your stomach</p>
-        </div>
-        <br>
-        <div class="intro">
-            <h2>GREAT OFFERS FROM US!!!</h2><br>
-            <p>For being our loyal customers, we at <strong>Pizza Fatta A Pezzi</strong> have officially made our pizzas
-                available online</p>
-            <p>They still come with the same great taste.</p><br>
-            <p><em><strong>Try our online application now!!!!</strong></em></p>
-        </div>
-        <br>
-        <div class="order-information">
-            <h3>Enter your information.</h3>
-            <form>
-                <div class="form-group">
-                    <label for="customer-name">Name: </label>
-                    <input id="customer-name" type="text" placeholder="John Paul">
-                </div>
-                <div class="form-group">
-                    <label for="customer-street">Address: </label>
-                    <input id="customer-street" type="text" placeholder="Prestige,Ngong Road">
-                </div>
-                <div class="form-group">
-                    <label for="customer-city">City: </label>
-                    <input id="customer-city" type="text" placeholder="Nairobi">
-                </div>
-                <div class="form-group">
-                    <label for="customer-phone">Phone Number: </label>
-                    <input id="customer-phone" type="text" placeholder="0700 000 000">
-                </div>
-                <div class="form-group">
-                    <label class="checkbox-inline"><input type="radio" name="cash-credit" value="cash"
-                            checked>Cash</label>
-                    <label class="checkbox-inline"><input type="radio" name="cash-credit" value="credit">Credit</label>
-                </div>
-                <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-            <br>
-        </div>
-        <div id="choices">
-            <div class="row">
-                <div class="card size col-3">
-                    <form>
-                        <h5><strong>Size</strong></h5>
-                        <input type="radio" id="small" name="size" value="small">
-                        <label for="small">Small</label>
-                        <br>
-                        <input type="radio" id="medium" name="size" value="medium">
-                        <label for="medium">Medium</label>
-                        <br>
-                        <input type="radio" id="large" name="size" value="large">
-                        <label for="large">Large</label>
-                    </form>
-                </div>
-                <div class="card crust col-3">
-                    <form>
-                        <h5><strong>Type of Crust</strong></h5>
-                        <input type="radio" id="thin" name="crust" value="original-thin">
-                        <label for="thin">Original Thin</label>
-                        <br>
-                        <input type="radio" id="pan" name="crust" value="new-york-pan">
-                        <label for="pan">New-York-Pan Crust</label>
-                        <br>
-                        <input type="radio" id="stuffed" name="crust" value="stuffed">
-                        <label for="stuffed">Stuffed Crust</label>
-                        <br>
-                        <input type="radio" id="italian" name="crust" value="italian">
-                        <label for="italian">Italian Crust</label>
-                    </form>
-                </div>
-                <div class="card toppings col-3">
-                    <form>
-                        <h5><strong>Toppings</strong></h5>
-                        <input type="radio" id="hawaiian" name="topping" value="hawaiian">
-                        <label for="hawaiian">Hawaiian topping</label>
-                        <br>
-                        <input type="radio" id="boer" name="topping" value="bore">
-                        <label for="boer">Boerewors Topping</label>
-                        <br>
-                        <input type="radio" id="chicken" name="topping" value="peri-peri-chicken">
-                        <label for="chicken">Peri-peri Chicken Topping</label>
-                        <br>
-                        <input type="radio" id="steak" name="topping" value="bbq-steak">
-                        <label for="steak">BBQ Steak</label>
-                    </form>
-                </div>
-                <div class="number-pizza card col-3">
-                    <form>
-                        <label for="number">How many pizzas would you like?</label>
-                        <input type="number" id="number" min="1" max="5">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="sub-total">
-            <p>The total cost for yor pizza/s is</p>
-        </div>
-        <div id="delivery">
-            <div class="row">
-                <div class="delivery-q col-4 card">
-                    <form>
-                        <label for="delivery">Do you want your pizza delivered to you?</label>
-                        <br>
-                        <input id="yes" name="delivery" value="yes" type="radio">
-                        <label for="yes">Yes</label>
-                        <br>
-                        <input id="no" name="delivery" value="no" type="radio">
-                        <label for="no">No</label>
-                    </form>
-                </div>
-                <div class="delivery-c col-8 card">
-                    </form>
-                    <br>
-                    <p>It will cost you Ksh. 200 only to deliver your pizza to you!</p>
-                </div>
-            </div>
-        </div>
-        <div id="grand-total"></div>
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pepino's Pizza</title>
+    <!-- jquery-2.2.0 -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap w/ optional theme -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- my css and js -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="header page-header">
+      <h1>Pepino's Pizza</h1>
+      <h2>Only the finest ingredients!</h2>
     </div>
-</body>
-
-</html>             <form>
-                    </form>
-                    <br>
-                    <p>It will cost you Ksh. 200 only to deliver your pizza to you!</p>
-                </div>
-            </div>
-        </div>
-        <div id="grand-total"></div>
-
+    <div class="container">
+      <div class="launch-order">
+        <h3>Order Now!</h3>
+        <p>We're ready to take your order and deliver at no extra cost. Just click the button below to begin</p>
+        <button type="button" class="btn btn-success">Begin Order</button>
+      </div>
+      <div class="order-information-input initially-hidden">
+        <h3>Enter your information.</h3>
+        <form>
+          <div class="form-group">
+            <label for="customer-name">Name: </label>
+            <input id="customer-name" type="text" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="customer-street">Address: </label>
+            <input id="customer-street" type="text" placeholder="123 Main Street">
+          </div>
+          <div class="form-group">
+            <label for="customer-city">City: </label>
+            <input id="customer-city" type="text" placeholder="Portland">
+          </div>
+          <div class="form-group">
+            <label for="customer-zip-code">Zip Code: </label>
+            <input id="customer-zip-code" type="text" placeholder="97214">
+          </div>
+          <div class="form-group">
+            <label for="customer-phone">Phone Number: </label>
+            <input id="customer-phone" type="text" placeholder="555-555-5555">
+          </div>
+          <div class="form-group">
+            <label class="checkbox-inline"><input type="radio" name="cash-credit" value="cash" checked>Cash</label>
+            <label class="checkbox-inline"><input type="radio" name="cash-credit" value="credit">Credit</label>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <div class="order-pizza-input initially-hidden">
+        <h3>Add a pizza to your order.</h3>
+        <form>
+          <div class="size form-group">
+            <h4>Pie Size:</h4>
+            <label class="checkbox-inline"><input type="radio" name="pie-size" value="small"> Small ($7)</label>
+            <label class="checkbox-inline"><input type="radio" name="pie-size" value="medium" checked> Medium ($9)</label>
+            <label class="checkbox-inline"><input type="radio" name="pie-size" value="large"> Large ($11)</label>
+            <label class="checkbox-inline"><input type="radio" name="pie-size" value="extra large"> Extra Large ($13)</label>
+          </div>
+          <div class="meat-toppings  form-group">
+            <h4>Meats: ($1.25 each) </h4>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Pepperoni">Pepperoni
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Sausage">Sausage
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Ham">Ham
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Meatball">Meatball
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Hamburger">Hamburger
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Bacon">Bacon
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Grilled Chicken">Grilled Chicken
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Meat Surprise">Meat Surprise
+            </label>
+          </div>
+          <div class="veg-toppings  form-group">
+            <h4>Veggies: ($0.75 each) </h4>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Olives">Olives
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Tomatoes">Tomatoes
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Onions">Onions
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Green Peppers">Green Peppers
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Mushrooms">Mushrooms
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Basil">Basil
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Spinach">Spinach
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Banana Peppers">Banana Peppers
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Pineapple">Pineapple
+            </label>
+          </div>
+          <div class="cheese  form-group">
+            <h4>Cheese:</h4>
+            <label class="checkbox"><input type="radio" name="cheese-options" value="regular" checked>  Regular</label>
+            <label class="checkbox"><input type="radio" name="cheese-options" value="extra">  Extra Cheese <em>(add $1)</em></label>
+            <label class="checkbox"><input type="radio" name="cheese-options" value="none">  No Cheese</label>
+          </div>
+          <button type="submit" class="btn btn-success">Add Pizza</button>
+        </form>
+      </div>
+      <div class="order-summary initially-hidden">
+        <h3>Your order.</h3>
+        <p>Click on a pizza to view and hide more information.</p>
+        <div class="pizza-list"></div>
+        <h3>Total Cost: <span id="pizza-list-total-cost"></span></h3>
+        <button id="add-another-pizza" class="btn btn-success">Add another Pizza</button>
+        <button id="checkout-order" class="btn btn-success">Checkout Out</button>
+      </div>
+      <div class="checked-out  initially-hidden">
+        <h3>Your order is on its way!</h3>
+        <p>Click below to place a new order.</p>
+        <button type="button" class="btn btn-success" id="new-order">New Order</button>
+        <p>This site was constructed to demonstrate the use of Object Oriented Programming. Click the button below to log the complete customer order object to the console. Customer order object includes all customer information, pizzas, and totalCost. (open the console with alt-cmd-j in chrome)</p>
+        <buton class="btn btn-default" id="console-log">Log Object to Console</buton>
+      </div>
     </div>
-</body>
-
-</html>                 <label for="location">What is your current location?</label>
-                        <input id="location" type="text" name="location">
-                    </form>
-                    <br>
-                    <p>It will cost you Ksh. 200 only to deliver your pizza to you!</p>
-                </div>
-            </div>
-        </div>
-        <div id="grand-total"></div>
-
-    </div>
-</body>
-
+  </body>
 </html>
